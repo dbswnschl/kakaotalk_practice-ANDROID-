@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="android.cadi.kakaotalk_m.fragments.FriendListFragment">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:id="@+id/sblayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scale_base_height="130"
+        app:scale_base_width="1080">
+
+
+        <TextView
+            android:id="@+id/friends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="친구"
+            app:scale_height="100"
+            app:scale_textsize="40"
+            app:scale_width="1080" />
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+    <ListView
+        android:id="@+id/list_friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:layout_below="@+id/sblayout"></ListView>
+
+
+</RelativeLayout>
